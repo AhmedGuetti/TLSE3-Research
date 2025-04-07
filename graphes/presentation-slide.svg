@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">Neural Approaches for Combinatorial Optimization</text>
+  
+  <!-- Three main domains section -->
+  <rect x="40" y="70" width="720" height="120" rx="10" fill="#e9ecef" stroke="#343a40" stroke-width="1"/>
+  
+  <!-- Domain 1: TSP -->
+  <rect x="60" y="90" width="220" height="80" rx="5" fill="#fff" stroke="#343a40" stroke-width="1"/>
+  <text x="170" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">General CO (TSP)</text>
+  <text x="170" y="130" font-family="Arial" font-size="12" text-anchor="middle">• Pointer Networks: 1.5x speedup</text>
+  <text x="170" y="150" font-family="Arial" font-size="12" text-anchor="middle">• GNNs: <2% quality gap</text>
+  <text x="170" y="170" font-family="Arial" font-size="12" text-anchor="middle">• RL outperforms SL for TSP</text>
+  
+  <!-- Domain 2: MILP -->
+  <rect x="290" y="90" width="220" height="80" rx="5" fill="#fff" stroke="#343a40" stroke-width="1"/>
+  <text x="400" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">MILP (B&B)</text>
+  <text x="400" y="130" font-family="Arial" font-size="12" text-anchor="middle">• ExtraTrees: 3x speedup</text>
+  <text x="400" y="150" font-family="Arial" font-size="12" text-anchor="middle">• TreeGate: 27% fewer nodes</text>
+  <text x="400" y="170" font-family="Arial" font-size="12" text-anchor="middle">• SL via imitation learning</text>
+  
+  <!-- Domain 3: SAT -->
+  <rect x="520" y="90" width="220" height="80" rx="5" fill="#fff" stroke="#343a40" stroke-width="1"/>
+  <text x="630" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">SAT Solvers</text>
+  <text x="630" y="130" font-family="Arial" font-size="12" text-anchor="middle">• Graph-Q-SAT: 2-3x fewer steps</text>
+  <text x="630" y="150" font-family="Arial" font-size="12" text-anchor="middle">• GNNs capture variable relations</text>
+  <text x="630" y="170" font-family="Arial" font-size="12" text-anchor="middle">• RL generalizes well across domains</text>
+  
+  <!-- Neural Architectures section -->
+  <rect x="40" y="210" width="720" height="180" rx="10" fill="#e9ecef" stroke="#343a40" stroke-width="1"/>
+  <text x="400" y="230" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Neural Network Architectures</text>
+  
+  <!-- Architecture 1: Pointer Network -->
+  <rect x="60" y="250" width="220" height="120" rx="5" fill="#fff" stroke="#343a40" stroke-width="1"/>
+  <text x="170" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Pointer Networks</text>
+  
+  <!-- Simple Pointer Network Illustration -->
+  <circle cx="100" cy="300" r="10" fill="#4dabf7"/>
+  <circle cx="130" cy="320" r="10" fill="#4dabf7"/>
+  <circle cx="160" cy="290" r="10" fill="#4dabf7"/>
+  <circle cx="190" cy="310" r="10" fill="#4dabf7"/>
+  <path d="M100,300 L130,320 L160,290 L190,310 L100,300" stroke="#1971c2" stroke-width="2" fill="none"/>
+  
+  <text x="170" y="350" font-family="Arial" font-size="12" text-anchor="middle">Best for TSP and routing problems</text>
+  
+  <!-- Architecture 2: GNN -->
+  <rect x="290" y="250" width="220" height="120" rx="5" fill="#fff" stroke="#343a40" stroke-width="1"/>
+  <text x="400" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Graph Neural Networks</text>
+  
+  <!-- Simple GNN Illustration -->
+  <circle cx="340" cy="300" r="10" fill="#51cf66"/>
+  <circle cx="380" cy="320" r="10" fill="#51cf66"/>
+  <circle cx="400" cy="290" r="10" fill="#51cf66"/>
+  <circle cx="420" cy="310" r="10" fill="#51cf66"/>
+  <circle cx="460" cy="300" r="10" fill="#51cf66"/>
+  
+  <line x1="340" y1="300" x2="380" y2="320" stroke="#2b8a3e" stroke-width="2"/>
+  <line x1="340" y1="300" x2="400" y2="290" stroke="#2b8a3e" stroke-width="2"/>
+  <line x1="380" y1="320" x2="420" y2="310" stroke="#2b8a3e" stroke-width="2"/>
+  <line x1="400" y1="290" x2="420" y2="310" stroke="#2b8a3e" stroke-width="2"/>
+  <line x1="420" y1="310" x2="460" y2="300" stroke="#2b8a3e" stroke-width="2"/>
+  <line x1="400" y1="290" x2="460" y2="300" stroke="#2b8a3e" stroke-width="2"/>
+  
+  <text x="400" y="350" font-family="Arial" font-size="12" text-anchor="middle">Versatile across all domains</text>
+  
+  <!-- Architecture 3: Hybrid -->
+  <rect x="520" y="250" width="220" height="120" rx="5" fill="#fff" stroke="#343a40" stroke-width="1"/>
+  <text x="630" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Hybrid Neural-Algorithmic</text>
+  
+  <!-- Simple Hybrid Illustration -->
+  <rect x="550" y="290" width="40" height="30" rx="5" fill="#ffd43b" stroke="#f08c00" stroke-width="2"/>
+  <text x="570" y="310" font-family="Arial" font-size="10" text-anchor="middle">ML</text>
+  
+  <rect x="650" y="290" width="60" height="30" rx="5" fill="#ffd43b" stroke="#f08c00" stroke-width="2"/>
+  <text x="680" y="310" font-family="Arial" font-size="10" text-anchor="middle">Traditional</text>
+  
+  <line x1="590" y1="305" x2="650" y2="305" stroke="#f08c00" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <text x="630" y="350" font-family="Arial" font-size="12" text-anchor="middle">Best overall performance</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f08c00"/>
+    </marker>
+  </defs>
+  
+  <!-- Learning Strategies section -->
+  <rect x="40" y="410" width="720" height="150" rx="10" fill="#e9ecef" stroke="#343a40" stroke-width="1"/>
+  <text x="400" y="430" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Learning Strategies</text>
+  
+  <!-- Left side: Supervised Learning -->
+  <rect x="60" y="450" width="340" height="90" rx="5" fill="#fff" stroke="#343a40" stroke-width="1"/>
+  <text x="230" y="470" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Supervised Learning</text>
+  <text x="230" y="490" font-family="Arial" font-size="12" text-anchor="middle">min E[ℓ(Y, f_θ(X))]</text>
+  <text x="230" y="510" font-family="Arial" font-size="12" text-anchor="middle">• Imitation of expert solutions</text>
+  <text x="230" y="530" font-family="Arial" font-size="12" text-anchor="middle">• Popular in MILP approaches</text>
+  
+  <!-- Right side: Reinforcement Learning -->
+  <rect x="420" y="450" width="340" height="90" rx="5" fill="#fff" stroke="#343a40" stroke-width="1"/>
+  <text x="590" y="470" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Reinforcement Learning</text>
+  <text x="590" y="490" font-family="Arial" font-size="12" text-anchor="middle">π* = arg max_π E_π[∑ γ^t R(s_t, a_t)]</text>
+  <text x="590" y="510" font-family="Arial" font-size="12" text-anchor="middle">• Learning through experience</text>
+  <text x="590" y="530" font-family="Arial" font-size="12" text-anchor="middle">• Popular in TSP and SAT solvers</text>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1a73e8">Performance Comparison Across Domains</text>
+  <text x="400" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#5f6368">Machine Learning Methods for Combinatorial Optimization</text>
+  
+  <!-- Chart area -->
+  <rect x="60" y="80" width="700" height="290" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="5" ry="5"/>
+  
+  <!-- Axes -->
+  <line x1="120" y1="370" x2="720" y2="370" stroke="#202124" stroke-width="2"/>
+  <line x1="120" y1="370" x2="120" y2="80" stroke="#202124" stroke-width="2"/>
+  
+  <!-- Y-axis labels and grid lines -->
+  <line x1="118" y1="370" x2="720" y2="370" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="110" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#5f6368">0</text>
+  
+  <line x1="118" y1="320" x2="720" y2="320" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="110" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#5f6368">1x</text>
+  
+  <line x1="118" y1="270" x2="720" y2="270" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="110" y="275" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#5f6368">2x</text>
+  
+  <line x1="118" y1="220" x2="720" y2="220" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="110" y="225" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#5f6368">3x</text>
+  
+  <line x1="118" y1="170" x2="720" y2="170" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="110" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#5f6368">4x</text>
+  
+  <line x1="118" y1="120" x2="720" y2="120" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="110" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#5f6368">5x</text>
+  
+  <!-- Axis Titles -->
+  <text x="400" y="410" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#202124">Methods and Problem Domains</text>
+  <text x="35" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#202124" transform="rotate(-90, 35, 220)">Performance Improvement</text>
+  
+  <!-- Domain Sections removed -->
+  
+  <!-- Method Labels -->
+  <!-- TSP Methods -->
+  <text x="150" y="390" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5f6368">PointerNet</text>
+  <text x="250" y="390" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5f6368">GNN (RL)</text>
+  
+  <!-- MILP Methods -->
+  <text x="330" y="390" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5f6368">ExtraTrees</text>
+  <text x="400" y="390" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5f6368">TreeGate</text>
+  <text x="470" y="390" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5f6368">ML+B&amp;B</text>
+  
+  <!-- SAT Methods -->
+  <text x="550" y="390" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5f6368">Graph-Q-SAT</text>
+  <text x="650" y="390" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5f6368">NeuroSAT</text>
+  
+  <!-- TSP bars -->
+  <rect x="130" y="320" width="40" height="50" rx="5" ry="5" fill="#4285f4" fill-opacity="0.8"/>
+  <text x="150" y="340" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">1.5x</text>
+  <text x="150" y="355" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">speedup</text>
+  
+  <rect x="230" y="340" width="40" height="30" rx="5" ry="5" fill="#4285f4" fill-opacity="0.8"/>
+  <text x="250" y="358" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">&lt;2%</text>
+  <text x="250" y="370" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="white">quality gap</text>
+  
+  <!-- MILP bars -->
+  <rect x="310" y="220" width="40" height="150" rx="5" ry="5" fill="#34a853" fill-opacity="0.8"/>
+  <text x="330" y="240" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">3x</text>
+  <text x="330" y="255" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">speedup</text>
+  
+  <rect x="380" y="295" width="40" height="75" rx="5" ry="5" fill="#34a853" fill-opacity="0.8"/>
+  <text x="400" y="315" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">27%</text>
+  <text x="400" y="330" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">fewer</text>
+  <text x="400" y="342" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">nodes</text>
+  
+  <rect x="450" y="290" width="40" height="80" rx="5" ry="5" fill="#34a853" fill-opacity="0.8"/>
+  <text x="470" y="315" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">31%</text>
+  <text x="470" y="330" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">speedup</text>
+  
+  <!-- SAT bars -->
+  <rect x="530" y="270" width="40" height="100" rx="5" ry="5" fill="#ea4335" fill-opacity="0.8"/>
+  <text x="550" y="295" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">2-3x</text>
+  <text x="550" y="310" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">fewer</text>
+  <text x="550" y="322" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">steps</text>
+  
+  <rect x="630" y="320" width="40" height="50" rx="5" ry="5" fill="#ea4335" fill-opacity="0.8"/>
+  <text x="650" y="340" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">1.5x</text>
+  <text x="650" y="355" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">speedup</text>
+  
+  <!-- Legend -->
+<rect x="520" y="85" width="230" height="120" rx="5" ry="5" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="635" y="105" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#202124">Domain Legend</text>
+  
+  <rect x="560" y="120" width="15" height="15" rx="2" ry="2" fill="#4285f4" fill-opacity="0.8"/>
+  <text x="635" y="132" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5f6368">TSP Approaches</text>
+  
+  <rect x="560" y="145" width="15" height="15" rx="2" ry="2" fill="#34a853" fill-opacity="0.8"/>
+  <text x="635" y="157" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5f6368">MILP Approaches</text>
+  
+  <rect x="560" y="170" width="15" height="15" rx="2" ry="2" fill="#ea4335" fill-opacity="0.8"/>
+  <text x="635" y="182" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#5f6368">SAT Approaches</text>
+  
+  <!-- Footer removed -->
+</svg>
